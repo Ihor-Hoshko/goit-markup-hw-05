@@ -120,6 +120,20 @@ img {
 .nav-list .nav-list-link:focus {
   color: var(--button-hover-color);
 }
+.nav-list-link {
+  position: relative;
+}
+
+.nav-list-link.current.link::after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--button-hover-color);
+  content: "";
+  position: absolute;
+  bottom: 0px;
+}
 /*CONTACTS*/
 .contacts-list {
   display: flex;

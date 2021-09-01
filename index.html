@@ -68,7 +68,9 @@
             ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ<br />
             ВАШЕГО БИЗНЕСА
           </h1>
-          <button type="button" class="button current">Заказать услугу</button>
+          <button type="button" class="button current" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- ADVANTAGE -->
@@ -416,5 +418,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-modal-button" type="button" data-modal-close>
+          <svg class="icon-close">
+            <use href="./img/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

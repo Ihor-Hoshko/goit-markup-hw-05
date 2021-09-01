@@ -650,3 +650,37 @@ img {
 .address-link:focus .address-icon {
   fill: var(--button-hover-text-color);
 }
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  height: 581px;
+  width: 521px;
+  background-color: var(--button-hover-text-color);
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-close {
+  width: 18px;
+  height: 18px;
+  fill: black;
+  border: 1px solid rgba(226, 8, 8, 0.1);
+  border-radius: 50%;
+}
+.close-modal-button {
+  background-color: #ffffff;
+  border: 0;
+}

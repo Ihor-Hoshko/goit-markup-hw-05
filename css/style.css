@@ -662,6 +662,7 @@ img {
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
 }
 .modal {
   height: 581px;
@@ -672,15 +673,24 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2), 1px 0px 1px rgba(0, 0, 0, 0.14),
+    3px 0px 1px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
-.icon-close {
-  width: 18px;
-  height: 18px;
-  fill: black;
+
+.close-modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid rgba(226, 8, 8, 0.1);
   border-radius: 50%;
-}
-.close-modal-button {
+
   background-color: #ffffff;
-  border: 0;
+  cursor: pointer;
 }

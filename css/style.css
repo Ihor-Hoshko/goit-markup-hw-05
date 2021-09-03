@@ -108,6 +108,7 @@ img {
   letter-spacing: 0.02em;
   padding-bottom: 32px;
   padding-top: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list .nav-list-link.current {
@@ -153,6 +154,7 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts-list .contact.current {
   color: var(--button-hover-color);
@@ -177,6 +179,7 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-list-adress:hover,
@@ -195,6 +198,7 @@ img {
   height: 16px;
   fill: #757575;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-mail {
@@ -202,6 +206,7 @@ img {
   height: 12px;
   fill: #757575;
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*FILTER*/
@@ -258,6 +263,9 @@ img {
   border-radius: 4px;
   border: #f5f4fa;
   padding: 6px 22px 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-list-all .button:hover,
 .filter-list-all .button:focus {
@@ -320,8 +328,11 @@ img {
   margin-left: 30px;
 }
 
-.project-list .link:hover,
-.project-list .link:focus {
+.project-list .item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project-list .item:hover,
+.project-list .item:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -347,7 +358,6 @@ img {
 }
 
 .project-card:hover .project-card-text {
-  opacity: 1;
   transform: translateY(0%);
 }
 .project-card-text {
@@ -365,7 +375,7 @@ img {
   letter-spacing: 0.03em;
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--button-hover-text-color);
-  opacity: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* advantage */
 
@@ -541,6 +551,8 @@ img {
   justify-content: center;
   border-radius: 50%;
   background-color: var(--button-hover-text-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -578,6 +590,8 @@ img {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
@@ -592,6 +606,7 @@ img {
 
 .client-icon {
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-icon:focus,
 .client-icon:hover {
@@ -634,6 +649,7 @@ img {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-footer:hover,
 .contact-footer:focus {
@@ -676,6 +692,7 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-icon {
